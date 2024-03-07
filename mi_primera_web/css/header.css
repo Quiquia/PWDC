@@ -53,6 +53,9 @@
 
 .menu-mobile > #btn-check:checked ~ .nav {
   display: block;
+  right: 0;
+  width: 100vw;
+  top: 79px;
 }
 
 .menu-mobile {
@@ -61,7 +64,7 @@
   cursor: pointer;
 }
 
-.menu-mobile:hover {
+.btn-checking:hover {
   transform: scale(1.1);
 }
 
@@ -97,6 +100,10 @@
 
   .btn-checking {
     display: none;
+  }
+
+  .menu-mobile > #btn-check:checked ~ .nav {
+    top: 0;
   }
 }
 
