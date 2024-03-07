@@ -1,0 +1,26 @@
+body {
+  color: white;
+}
+
+.cuadrado {
+  background-color: red;
+  /* width: 10rem; */
+  height: 10rem;
+  margin-bottom: 0.25rem;
+  display: inline;
+}
+
+.parrafo {
+  background-color: green;
+  width: 8rem;
+  height: 8rem;
+  display: inline-block;
+}
+
+.link {
+  background-color: blue;
+  /* width: 6rem; */
+  height: 6rem;
+  display: block;
+  margin-bottom: 0.25rem;
+}

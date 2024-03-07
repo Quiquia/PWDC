@@ -1,0 +1,21 @@
+@import "./header.css";
+@import "./main.css";
+@import "./footer.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  /* background: rgba(0, 0, 0, 0.5); */
+  color: #000;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  background-color: #fffde3;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
