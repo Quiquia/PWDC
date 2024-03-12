@@ -25,44 +25,44 @@
           <img src="./assets/img/logo-white.png" alt="logo de mi perfil" />
         </a>
         <div class="menu-mobile">
-          <input type="checkbox" class="btn-check" id="btn-check" />
           <label for="btn-check" class="btn-checking">
             <i class="fa-solid fa-bars"></i>
           </label>
-          <nav class="nav">
-            <ul class="nav-list">
-              <li>Inicio</li>
-              <li>Acerca de mi</li>
-              <li>Proyectos</li>
-              <!-- <li>Servicios</li> -->
-              <li>Contactos</li>
-            </ul>
-          </nav>
         </div>
+        <input type="checkbox" class="btn-check" id="btn-check" />
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#acerda_de_mi">Acerca de mi</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <!-- <li>Servicios</li> -->
+            <li><a href="#footer">Contactos</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <div class="wrapper">
       <main id="main" class="main">
-        <section class="seccion-1">
+        <section class="seccion-1" id="acerda_de_mi">
           <div class="seccion-1-container">
             <h2 class="seccion-1__title">Acerca de mí</h2>
-            <p class="seccion-1__parrafo">
+            <p class="seccion-1__parrafo1">
               ¡Bienvenido a mi página! Aquí, aprenderás más sobre mí.
             </p>
-            <p class="seccion-1__parrafo">
+            <p class="seccion-1__parrafo2">
               Me llamo Vanessa, nací en Perú y vivo en Lima. Me gusta el bailar
               y cocinar postres. Me encantaría aprender a programar para poder
               crear aplicaciones.
             </p>
           </div>
-          <div class="acerca-imagen">
+          <div class="acerca-imagen" id="">
             <img src="./assets/img/image-2.jpg" alt="imagen personal" />
           </div>
         </section>
         <section class="seccion-2">
           <img src="./assets/img/image-3.jpg" alt="imagen de carrusel" />
         </section>
-        <section class="seccion-3">
+        <section class="seccion-3" id="proyectos">
           <h2 class="seccion-3__title">Proyectos</h2>
           <div class="seccion-3-container">
             <img src="./assets/img/image-1.jpg" alt="imagen de carrusel" />
@@ -106,9 +106,42 @@
           </div>
         </section>
       </main>
+      <div class="form-header">
+        <h1>Contacto</h1>
+        <p><em>¡Esperamos tu consulta!</em></p>
+        <form action="" method="get" class="formulario" id="form">
+          <div class="form-row">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="maria@gmail.com"
+              required
+            />
+          </div>
+          <div class="form-row">
+            <label for="mensaje">Mensaje</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              placeholder="Escribir un mensaje"
+            >
+            </textarea>
+          </div>
+          <div class="form-row">
+            <button>Enviar</button>
+          </div>
+          <p class="alertas"></p>
+        </form>
+      </div>
     </div>
     <hr />
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="footer-container">
         <h3 class="footer__subtitle">Redes Sociales :</h3>
         <nav class="nav-footer">
@@ -121,6 +154,6 @@
         </nav>
       </div>
     </footer>
-    <script></script>
+    <script src="./script.js"></script>
   </body>
 </html>
