@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Cabecera */
+
+.header {
+  position: fixed;
+
+  width: 100%;
+  background-color: #32ac75;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.header-container,
+.footer-container {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+}
+
+.logo {
+  flex: 1; /* Takes up remaining space */
+}
+.logo img {
+  max-width: 70px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: row;
+    text-align: center;
+    position: relative;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+    flex: none;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .nav-container {
+    display: none;
+  }
+
+  .show {
+    display: block;
+    position: absolute;
+    top: 97px;
+    left: 0;
+    width: 100%;
+    background: #4fa47e;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Botones de llamada a la acción */
+button {
+  background-color: rgb(0, 123, 255);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: rgb(0, 96, 201);
+}
+
+/* Estilos para el enlace */
+a {
+  text-decoration: none;
+  color: rgb(0, 123, 255);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para la lista */
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* Estilos para las secciones */
+section {
+  margin-bottom: 20px;
+}
+
+/* Estilos para flexbox */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-item {
+  flex: 1;
+  margin-right: 20px;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .flex-item {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

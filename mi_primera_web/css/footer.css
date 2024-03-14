@@ -30,3 +30,13 @@
   text-decoration: none;
   color: white;
 }
+
+.logo-icon-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-copyright {
+  text-align: center;
+}
