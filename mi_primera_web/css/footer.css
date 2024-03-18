@@ -16,21 +16,6 @@
   text-transform: uppercase;
 }
 
-.nav-footer-_list {
-  padding: 0;
-  display: flex;
-  gap: 1rem;
-}
-
-.nav-footer-_list li {
-  list-style: none;
-}
-
-.nav-footer-_list li a {
-  text-decoration: none;
-  color: white;
-}
-
 .logo-icon-footer {
   display: flex;
   justify-content: space-between;
@@ -39,4 +24,18 @@
 
 .footer-copyright {
   text-align: center;
+  font-size: 10px;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-social-list li {
+  list-style: none;
+}
+
+.footer-social-list li i {
+  font-size: 1.25 rem;
 }

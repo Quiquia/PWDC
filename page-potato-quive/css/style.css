@@ -1,42 +1,16 @@
+@import "./header.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f2f2f2;
   color: #333;
-}
-
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
-.logo {
-  width: 100px; /* Ancho del logo */
-  height: auto;
-}
-nav {
-  margin-top: 20px;
-}
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
-nav ul li {
-  margin: 0 10px;
-}
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  transition: color 0.3s;
-}
-nav ul li a:hover {
-  color: #ffd700; /* Color de enlace al pasar el cursor */
 }
 
 .container {
@@ -54,9 +28,11 @@ p {
   line-height: 1.6;
   margin-bottom: 30px;
 }
+
 .product {
   margin-bottom: 30px;
 }
+
 .product img {
   width: 100%;
   max-width: 300px;
